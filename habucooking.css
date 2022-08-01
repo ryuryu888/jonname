@@ -1,0 +1,381 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+  width:90%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2{
+	text-align: center;
+}
+
+#tamura h1{
+	text-align: center;
+
+}
+
+.itibu{
+	text-align: center;
+	line-height: 0px;
+	font-size: 20px;
+}
+
+.zentai{
+  width:90%;
+  margin: 0 auto;
+  height:auto;
+  margin-top: 15px;
+  background-color:#ffffff;
+
+
+}
+
+.menu {
+	display: block;
+	overflow: hidden;
+	width: 80px;
+	height:80px;
+	margin: 0px auto;
+  margin-top:  15px;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+	        transition: all 0.8s ease-in-out;
+	border: 13px solid transparent;
+	border-radius: 50%;
+	background-color: #88ddaa;
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 8px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.7em;
+	transition: all 0.2s ease-in;
+	        transition: all 0.2s ease-in;
+	text-decoration: none;
+	color: #1b2538;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+.menu ul li a:target {
+	border-bottom-color: #1b2538;
+}
+/* クリックした時の動き */
+#menuid {
+	display: none;
+}
+#menuid:checked ~ .menu {
+	width: 100%;
+	height: 60px;
+	border: 2px solid #1b2538;
+	border-radius: 7px;
+	background-color:#7FFFD4;
+}
+#menuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#menuid:checked ~ .menu > .menubar {
+	display: none;
+}
+.imgdayo img{
+	width:100%;
+	max-width: 100%;
+	height: auto;
+	line-height: 10px;
+	opacity:0.8;
+}
+
+.acc p{
+  display:inline-block;
+	background-color: #ffffff;
+}
+
+.broku {
+  display:block;
+  width:100%;
+  margin-right: auto;
+  height:auto;
+  background-color: #eeeeee;
+  text-align: left;
+}
+
+.broku img {
+	width:50%;
+	max-width: 100%;
+	height: auto;
+  float:left;
+  z-index: 100;
+
+}
+
+.broku p {
+  font-stretch: expanded;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+}
+
+@media screen and (min-width:781px){
+
+  /*画面幅が781px以上の時*/
+}
+
+#resipi{
+	font-size: 38px;
+}
+
+#resupi {
+	border-left: solid 5px #7db4e6;
+	font-size: 38px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.boxdayo {
+	position:relative;
+	margin: 2em 0;
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px 10px 7px;
+	border: solid 2px #FFC107;
+
+}
+
+.boxdayo .boxdayo2 {
+	position: absolute;
+	display: inline-block;
+	top: -2px;
+	left:-2px;
+	padding:0 9px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px;
+	background:#FFC107;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.boxdayo a{
+	margin:0;
+	padding:5px;
+	padding-left: 40px;
+	text-align: center;
+}
+
+table{
+	border-radius: 6px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: auto;
+  margin-left : auto;
+	width:70%;
+}
+
+table #kane{
+	text-underline-position: under;
+	text-decoration: underline;
+	text-decoration-color: orange;
+	padding-bottom:3px;
+	padding:5px 0;
+}
+
+.tablen{
+border-collapse: collapse;
+border-right: 2px solid #ffaa55;
+}
+.tablen th{
+padding: 10px;
+background-color: #ffdd11;
+border-left: 5px solid #ffaa55;
+border-top: 1px solid #fff;
+}
+.tablen td{
+padding: 10px;
+background-color: #fff;
+border:   2px solid #999;
+}
+
+.dd{
+	background-color: #eeeeee;
+	margin-bottom: 30px;
+}
+
+.acc{
+	background-color: #eeeeee;
+}
+
+.kon {
+	width:250px;
+	height:360px;
+	margin-left: 100px;
+}
+
+p #cc{
+	 padding-left: 200px;
+}
+
+.asa{
+	text-align: center;
+}
+
+.dasa{
+	text-align: center;
+}
+
+.mozi{
+font-size: 18px;
+}
+
+.sks {
+	text-align: center;
+}
+.fadeIn{
+	opacity:1;
+	transform:translateX(0);
+}
+.ccccc{
+	transform:translateX(-50px);　/* 最初は元の位置より左にずらしておく */
+  opacity:0;  /* 最初は非表示にしておく */
+  transition:opacity 1s,transform 0.5s;　
+}
+
+.ddddd{
+	transform:translateX(-50px);　/* 最初は元の位置より左にずらしておく */
+  opacity:0;  /* 最初は非表示にしておく */
+  transition:opacity 1s,transform 0.5s;　
+}
+
+.fade_off {
+    opacity: 0;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.fade_on {
+    opacity: 1;
+}
+
+#page_top {
+    position: fixed;
+		width:50px;
+		height:35px;
+    bottom: 35px;
+    right: 40px;
+		opacity: 0.6;
+		border-radius: 15px;
+		z-index: 10;
+}
+#page_top a {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+figure:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.container{
+  position:relative;
+  width:100%;
+  height:100px;
+}
+
+.tobu span{
+  font-family:Consolas,'Courier New', Courier, Monaco, monospace;
+  position:absolute;
+  left: 20px;
+	right:0;
+	top:0;
+	bottom: 0px;
+	margin: auto;
+	font-size:1em;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+	width:100px;
+	height:50px;
+
+}
+
+.tobu span:nth-child(1){ left:-5em; animation: bound-anim 1.4s 0.0s infinite;}
+.tobu span:nth-child(2){ left:-3em; animation: bound-anim 1.4s 0.15s infinite;}
+.tobu span:nth-child(3){ left:-1em; animation: bound-anim 1.4s 0.3s infinite;}
+
+.tobu span:nth-child(4){ left: 1em; animation: bound-anim 1.4s 0.45s infinite;}
+
+.tobu span:nth-child(5){ left: 3em; animation: bound-anim 1.4s 0.6s infinite;}
+
+.tobu span:nth-child(6){ left: 5em; animation: bound-anim 1.4s 0.75s infinite;}
+
+.tobu span:nth-child(7){ left: 7em; animation: bound-anim 1.4s 0.9s infinite;}
+
+
+@keyframes bound-anim {
+	0%,100% {top: 0;transform: scale(1);}
+	30% {top: -25%;}
+	50% {transform: scale(1);}
+	90% {top: 0;transform: scale(1.2,0.8);}
+}

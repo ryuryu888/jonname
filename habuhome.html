@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <Link rel="stylesheet" type="text/css" href="habuhome.css" >
+    <title>Gourmet Survival</title>
+    <link href=”css/bootstrap.min.css” rel=”stylesheet”>
+    <link href=”css/bootstrap-responsive.min.css” rel=”stylesheet”>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+  </head>
+  <header>
+    <input type="checkbox" id="menuid">
+    <label class="menu" for="menuid">
+
+      <div class="menubar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul>
+        <li><a id="Title" href="start.html">Title</a></li>
+        <li><a id="home" href="habuhome.html">Home</a></li>
+        <li><a id="cooking" href="habucooking.html">Cooking</a></li>
+        <li><a id="skill" href="#sskill">Skill</a></li>
+      </ul>
+
+    </label>
+  </header>
+  <body>
+<div id="page_top"><a href="#">TOP</a></div>
+
+<div style='height:5px;'>
+</div>
+<div id="page_top"><a href="#">TOP</a></div>
+
+    <div id="tamura">
+          <h1>Gourmet Survival</h1>
+          </div>
+          <div class="itibu">
+            <p>〜Home〜</p>
+          </div>
+          <br></br>
+          <div class="imgdayo">
+            <p><img style="display:none" src="fruts.jpg" width="1150px;"　class="img-responsive center-block"></p>
+          </div>
+
+          <div class="zentai">
+
+            <div class="acc">
+              <br></br>
+              <div class="aaaa">
+                <h2 style="display:none" id="bbbbb" class="fade_off">+このサイトの目的+</h2>
+
+              </div>
+              <p>こんにちは本サイトを作成した田村です</p>
+              <br><p>現在の日本では生きていく上で災害と隣り合わせが当たり前の生活になった</p>
+              <br>
+              <p>なので日本で生きるためには災害の備えが必要である</p>
+              <br>
+              <p>そんな災害の備えについて書いたWEBサイトがこのグルメサバイバルです</p>
+              <br>
+              <p>このWEBサイトの対策では災害時に電子レンジやコンロを使えない状況に陥ったとき、</p>
+              <br>
+              <p>どのような料理を作ることができて、どのような料理が健康面を保つことができるかを考えて作ってみました</p>
+              <br>
+              <p>カンパンや水で作るご飯があっても同じ食品があるわけではないので色々なレシピを記載しています</p>
+              <br>
+              <p>普段の生活の中でも美味しく食べれる料理なのでぜひ試してみてください！</p>
+              <br>
+              <br>
+              <br>
+              <br></br>
+            </div>
+            <div class="broku">
+              <div class="sa sa--rl"><img id="aaaaa" class="fade_off" style="display:none" src="IMG_4789.jpg" width="500px" height="400px">
+                <br>
+                <br><br>
+                <p><span class="ggg"></span>自分も料理が苦手なので、このような美味しそうで簡単なレシピを乗っけています。</p>
+                <br>
+                <br>
+                <br>
+                <p><span class="ggg">こちらの画像のものは乗っけていませんが、ラザニアと言う食べ物のです。</span></p>
+                <br><br><br><br><br><br>
+              </div>
+            </div>
+            <div class="skillup">
+              <br><br><br><br>
+               <h3 id="sskill"></h3>
+               <br><br>
+               <h2>〜Skill〜</h2>
+                <h2>+ターゲットユーザーの設定+</h2>
+              <br>
+              <p>今回私がこのサイトのターゲットとして選んだ人は、料理のスキルが乏しい人や、若者である。</p>
+              <br>
+              <p>若者の中で、一人暮らしをしている方も多く、ただ焼くだけの料理をしている人が多いと考えたため、</p>
+              <br>
+              <p>災害時に作れるものを増やすことにチャレンジして欲しいことからこのユーザー設定を選んだ</p><br>
+              <br><br><br><br><br>
+              <h2>+目標のスキルアップと成果+</h2>
+              <br>
+              <p>私が今回目指したスキルアップの習得では、jsとcssを使った表示するもののアニメーションです</p>
+          <br><p>アニメーションの動きでは、cssで大雑把な動きを作ることができて、jsで精度の高い動きができることを学んだ</p>
+          <br><p>実際の成果では、cssをうまく使うことができたが、細かい動きを多く作ることができなかった</p>
+            </div>
+
+            <div>
+
+          </div>
+
+          <script>
+            const h1 = document.querySelector('h1')
+
+            h1.animate([{opacity: '0'}, {opacity: '1'}], 4000)
+
+          </script>
+
+
+<script>
+          $(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+
+  // 100px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+});
+</script>
+
+<script>
+  $('img').fadeIn(2700);
+
+</script>
+<script>
+    $(function(){
+    $(window).scroll(function (){
+      $("#aaaaa").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        }else{
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+    $(function(){
+    $(window).scroll(function (){
+      $("#bbbbb").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/5){
+          $(this).addClass("fade_on");
+        }else{
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+  });
+</script>
+
+
+          <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+          <div id="page_top"><a href="#">TOP</a></div>
+  </body>
+  </html>

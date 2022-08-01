@@ -1,0 +1,237 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+  width:90%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2{
+	font-family: "メイリオ";
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+}]
+
+#tamura h1{
+	text-align: center;
+
+}
+
+.itibu{
+	text-align: center;
+	line-height: 0px;
+	font-size: 20px;
+}
+
+.zentai{
+  width:90%;
+  margin: 0 auto;
+  height:auto;
+  text-align: center;
+
+}
+header {
+	postion: -webkit-sticky;
+	position: sticky;
+	top: 0;
+z-index: 10;
+}
+
+.menu {
+	display: block;
+	overflow: hidden;
+	width: 80px;
+	height:80px;
+	margin: 0px auto;
+  margin-top:  15px;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+	        transition: all 0.8s ease-in-out;
+	border: 13px solid transparent;
+	border-radius: 50%;
+	background-color: #88ddaa;
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 8px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.7em;
+	transition: all 0.2s ease-in;
+	        transition: all 0.2s ease-in;
+	text-decoration: none;
+	color: #1b2538;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+.menu ul li a:target {
+	border-bottom-color: #1b2538;
+}
+/* クリックした時の動き */
+#menuid {
+	display: none;
+}
+#menuid:checked ~ .menu {
+	width: 100%;
+	height: 60px;
+	border: 2px solid #1b2538;
+	border-radius: 7px;
+	background-color:#7FFFD4;
+}
+#menuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#menuid:checked ~ .menu > .menubar {
+	display: none;
+}
+
+.imgdayo img{
+	width:100%;
+	max-width: 100%;
+	height: auto;
+	line-height: 10px;
+	opacity:0.8;
+}
+
+.acc p{
+	opacity:0.7;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.broku {
+  display:block;
+  width:100%;
+  margin-right: auto;
+  height:auto;
+  background-color: #eeeeee;
+  text-align: left;
+}
+
+.broku img {
+	width:50%;
+	max-width: 100%;
+	height: auto;
+  float:left;
+  z-index: 100;
+
+}
+
+.broku p {
+  font-stretch: expanded;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+}
+
+@media screen and (min-width:781px){
+
+  /*画面幅が781px以上の時*/
+}
+
+.ggg{
+  margin-left : 15px;
+}
+
+.skillup h2 {
+  margin-top: 30px;
+}
+.skillup p{
+opacity:0.7;
+display:inline-block;
+vertical-align: top;
+text-align: center;
+}
+
+
+#page_top {
+    position: fixed;
+		width:50px;
+		height:35px;
+    bottom: 35px;
+    right: 40px;
+		opacity: 0.6;
+		border-radius: 15px;
+		z-index: 10;
+}
+#page_top a {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+.aaaaa{
+	transform:translateX(-50px);　/* 最初は元の位置より左にずらしておく */
+  opacity:0;  /* 最初は非表示にしておく */
+  transition:opacity 1s,transform 0.5s;　
+}
+
+
+.fadeIn{
+	opacity:1;
+	transform:translateX(0);
+}
+
+.fade_off {
+    opacity: 0;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.fade_on {
+    opacity: 1;
+}

@@ -1,0 +1,75 @@
+.bg_img{
+  text-align: center;
+}
+
+
+.bg_img::after {
+  content: '';
+  background-color: rgba(0,0,0,.4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.bg_img p{
+  font-size:14px;
+  margin: 0;
+  padding: .2em;
+  font-size:2.2rem;
+  color: #FFF;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+
+}
+body{
+  background: URL(umaka.jpg);
+  width: 100%;
+  height: auto;
+  background-size:cover;
+  background-position:50%;
+  position: relative;
+
+}
+
+
+* {
+    margin: 0;
+}
+
+.content {
+    width:auto;
+    height: auto;
+}
+p {
+    line-height: 3em;
+}
+
+
+.hyouzi {
+    opacity: 0;
+    animation-name: hyouzi;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes hyouzi {
+    100% {  opacity: 1;}
+}
+
+.txt01 {animation-delay: 0.5s;}
+.txt02 {animation-delay: 1.7s;}
+.txt03 {animation-delay: 2.9s;}
+.txt04 {animation-delay: 4.1s;}
+.txt05 {animation-delay: 5.5s;}
+.txt06 {animation-delay: 7s;}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    color:#00ddcc;
+}
